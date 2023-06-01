@@ -1,0 +1,152 @@
+#spells-container {
+    display: grid;
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    list-style: none;
+    margin: 2rem;
+    margin-bottom: 0px;
+    background-color: rgba(0,0,0,0.2);
+    color:white;
+}
+
+#spell-item {
+    border:rgba(0,0,0,0.3) solid;
+    padding: 10px;
+    margin: 0.7rem;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow:0px 0px 8px rgb(217, 255, 156);
+    transition: 400ms;
+    text-align: center;
+}
+
+#spell-item:hover {
+    transform: scale(115%);
+    background-color: rgba(0,0,0,0.4);
+    box-shadow:0px 0px 25px rgb(217, 255, 156);
+    cursor: pointer;
+}
+
+.spell-heading {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    padding: 10px;
+    color: rgba(255,255,255,0.8);
+}
+
+.flex-center-top {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.search{
+    background-color: rgba(0,0,0,0.6);
+    border-color: rgba(255,255,255,0.5);
+    color: white;
+    height: 2rem;
+    width: 15rem;
+    text-align: center;
+}
+
+.flex-search {
+    display: flex;
+    justify-content: center;
+}
+
+.parent-crest{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.top-left{
+    position:absolute;
+    top:20%;
+    left: 17px;
+}
+
+.top-right{
+    position: absolute;
+    top: 8px;
+    right: 0%;
+}
+.sticky-container{
+    border:rgba(0,0,0,0.3) solid;
+    /* padding-top: 600px; */
+    margin: 0.7rem;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow:0px 0px 8px rgb(217, 255, 156);
+    /* transition: 400ms; */
+    text-align: center;
+    position: sticky;
+    top: 20px; 
+    overflow-y: auto;
+    height: 600px;
+
+
+/* flobberworm */
+}
+
+li{
+    list-style: none
+}
+
+.big-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr
+}
+
+.selected-ingredient{
+    margin: 5%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+
+}
+
+.all-ingredients{
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+.ingredients-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    margin-right:25px ;
+}
+
+#expanded-elixir {
+    transition: 1s;
+    height: 90px;
+    overflow-y: auto;
+}
+
+.expand-transition {
+    height: 40px;  
+    transition: 600ms;
+}
+
+.expand-transition:hover {
+    height: 100px;
+    cursor:pointer;
+    overflow-y: auto;
+}
+
+button {
+    cursor: pointer;
+}
